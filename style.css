@@ -3,3 +3,8 @@
     --second-family: "HeadlandOne", sans-serif;
     --third-family: "Hammersmith One", sans-serif;
   }
+  img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
