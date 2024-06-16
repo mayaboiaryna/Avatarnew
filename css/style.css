@@ -1,0 +1,31 @@
+:root {
+    --font-family: "Inter", sans-serif;
+    --second-family: "HeadlandOne", sans-serif;
+    --third-family: "Hammersmith One", sans-serif;
+  }
+  img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+  .container{
+   width: 1062px; 
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  .flex{
+    display: flex;
+  }
+  .treyler {
+    padding-top: 330px;
+    padding-bottom: 330px;
+    background-image: url("../images/divchina.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
