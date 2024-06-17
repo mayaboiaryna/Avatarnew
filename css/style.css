@@ -18,6 +18,19 @@
   .flex{
     display: flex;
   }
+  .hero {
+    background-color:gray ;
+    width: 1440px;
+    height: 740px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("../images/chlop1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    }
   .treyler {
     padding-top: 330px;
     padding-bottom: 330px;
