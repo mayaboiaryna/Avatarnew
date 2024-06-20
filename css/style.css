@@ -1,44 +1,93 @@
 :root {
-    --font-family: "Inter", sans-serif;
-    --second-family: "HeadlandOne", sans-serif;
-    --third-family: "Hammersmith One", sans-serif;
-  }
-  img {
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-  }
-  .container{
-   width: 1062px; 
-   padding-left: 15px;
-   padding-right: 15px;
-   margin-left: auto;
-   margin-right: auto;
-  }
-  .flex{
-    display: flex;
-  }
-  .hero {
-    background-color:gray ;
-    width: 1440px;
-    height: 740px;
-    margin-right: auto;
-    margin-left: auto;
-    background-image: url("../images/chlop1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 180px;
-    padding-bottom: 180px;
-    }
-  .treyler {
-    padding-top: 330px;
-    padding-bottom: 330px;
-    background-image: url("../images/divchina.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
+  --font-family: "Inter", sans-serif;
+  --second-family: "HeadlandOne", sans-serif;
+  --third-family: "Hammersmith One", sans-serif;
+}
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+a {
+  color: inherit;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 1062px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex {
+  display: flex;
+}
+.header {
+  padding-top: 39px;
+  padding-bottom: 39px;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
+}
+.yviity {
+  width: 141px;
+  height: 41px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+  color: #26c6ea;
+}
+.header-img {
+  margin-right: 168px;
+}
+.header-nav {
+  justify-content: space-between;
+  align-items: center;
+}
+.header-list {
+  gap: 38px;
+}
+.hero {
+  background-color: gray;
+  width: 1440px;
+  height: 740px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("../images/chlop1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  color: white;
+}
+.treyler {
+  padding-top: 330px;
+  padding-bottom: 330px;
+  background-image: url("../images/divchina.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.freise {
+  text-align: center;
+}
+.footer-list {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
