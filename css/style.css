@@ -3,6 +3,13 @@
   --second-family: "HeadlandOne", sans-serif;
   --third-family: "Hammersmith One", sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
 ul,
 ol {
   margin: 0px;
@@ -12,17 +19,11 @@ ol {
 a {
   color: inherit;
 }
-img {
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-}
 .container {
   width: 1062px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  outline: 2px dashed red;
+  margin: 0 auto;
 }
 .flex {
   display: flex;
@@ -39,7 +40,15 @@ img {
   text-align: center;
   color: white;
 }
-.yviity {
+.header-img {
+  margin-right: 168px;
+}
+.header-nav {
+  justify-content: space-between;
+  align-items: center;
+}
+.header .btn {
+  align-self: center;
   width: 141px;
   height: 41px;
   font-family: var(--second-family);
@@ -48,20 +57,38 @@ img {
   text-align: justify;
   color: #26c6ea;
 }
-.header-img {
-  margin-right: 168px;
+.header-list-child:nth-child(3) {
+  margin-right: 212px;
 }
-.header-nav {
-  justify-content: space-between;
-  align-items: center;
+.header-link {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+.header-link:hover,
+.header-link:focus {
+  color: #94cfff;
+}
+.header-list-child {
+  justify-content: center;
+  margin-right: 38px;
 }
 .header-list {
   gap: 38px;
 }
+.swiper-link {
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
 .hero {
   background-color: gray;
   width: 1440px;
-  height: 740px;
+  height: 400px;
   margin-right: auto;
   margin-left: auto;
   background-image: url("../images/chlop1.jpg");
@@ -71,6 +98,76 @@ img {
   padding-top: 180px;
   padding-bottom: 180px;
   color: white;
+}
+.hero-content {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+.hero-list {
+  width: 376px;
+  display: block;
+}
+.hero-list-child-2:nth-child(1) {
+  margin-bottom: 24px;
+}
+.hero-list-child-2:nth-child(2) {
+  margin-bottom: 24px;
+}
+.hero-list-child:nth-child(3) {
+  margin-bottom: 42px;
+}
+.hero-list-2 {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.button {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 75px;
+  background-image: url("../images/Rectangle\ 10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 741px;
+}
+.expression {
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 10px;
+}
+.expression-title {
+  text-align: center;
+  margin-bottom: 16px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  color: #0a3853;
+}
+.expression-content {
+  text-align: center;
+  margin-bottom: 8px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+}
+.img-expression {
+  margin-left: auto;
+  margin-right: auto;
+}
+.phrase-title {
+  margin-bottom: 16px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  color: #141414;
 }
 .treyler {
   padding-top: 330px;
@@ -86,8 +183,143 @@ img {
 .freise {
   text-align: center;
 }
-.footer-list {
+.teaching {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding-top: 58px;
+  padding-bottom: 58px;
+  background-image: url("../images/fon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: cover;
+}
+.teaching-content {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #141414;
+}
+.teaching-list {
   display: flex;
-  gap: 16px;
-  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 36px;
+  row-gap: 24px;
+  justify-content: center;
+}
+.teaching-list-child {
+  flex-basis: calc((100% - 72px) / 3);
+  padding: 36px 0px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: "Headland One", serif;
+  text-align: center;
+}
+.teaching-list-child:nth-child(3n + 1) > .teaching-content:first-child::after {
+  background-image: url("../images/Rectangle\ 42.svg");
+}
+
+.teaching-list-child:nth-child(3n + 2) > .teaching-content:first-child::after {
+  background-image: url("../images/Rectangle\ 99.svg");
+}
+
+.teaching-list-child:nth-child(3n) > .teaching-content:first-child::after {
+  background-image: url("../images/Rectangle\ 96.svg");
+}
+.teaching-content:first-child::after {
+  background-repeat: no-repeat;
+  display: block;
+  content: "";
+  height: 40px;
+  width: 152px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.teaching-title {
+  margin-bottom: 45px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  color: #141414;
+}
+.footer {
+  max-width: 1440px;
+  padding-top: 53px;
+  padding-bottom: 25px;
+  background-repeat: no-repeat;
+  margin-left: 220px;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(43, 74, 97, 0.87),
+      rgba(43, 74, 97, 0.87)
+    ),
+    url("../images/footer1.jpg");
+}
+.footer-list-child:first-child{
+  margin-bottom:16px ;
+}
+.footer-content {
+  display: flex;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+.footer-list {
+  padding-top: 45px;
+  padding-bottom: 36px;
+}
+.footer-content-small {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+.footer-flex {
+  display: flex;
+  gap: 80px;
+}
+.btn {
+  padding-top: 9px;
+  padding-bottom: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  border: 2px solid #26c7ea;
+  border-radius: 35px 0;
+  width: 141px;
+  height: 41px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #26c6ea;
+  background-color: #0b0e66;
+}
+.btn:nth-child(1) {
+  height: 80px;
+  width: 260px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 31px;
+  padding-left: 30px;
+  text-align: center;
+}
+.Line{
+  height: 153px;
+  padding-top: 30px;
+}
+.logo-footer{
+  height: 70px;
+  width: 183px;
+  margin-top:50px;
+}
+  
+.strih{
+  height: 1px;
+  width: 269px;
+  margin-top:13px;
 }
